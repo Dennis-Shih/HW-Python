@@ -13,14 +13,19 @@ def calculator(number1, number2, operator):
 		return number1+number2
 	elif (operator == '-'):
 		print(number1-number2)
+		return number1-number2
 	elif (operator == '*'):
 		print(number1*number2)
+		return(number1*number2)
 	elif (operator == '/'):
 		print(number1/number2)
+		return(number1/number2)
 	elif (operator == '**'):
 		print(number1**number2)
+		return number1**number2
 	elif (operator == '//'):
 		print(number1//number2)
+		return number1//number2
 	else: return False
 def input_output():
 	shouldExit=False
