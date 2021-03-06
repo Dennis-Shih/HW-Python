@@ -1,9 +1,8 @@
 def calculator(number1, number2, operator):
-	result=0.0
+	
 	
 	if (operator == '+'):
-		result=number1+number2
-		print(result)
+		print(number1+number2)
 	elif (operator == '-'):
 		print(number1-number2)
 	elif (operator == '*'):
@@ -22,10 +21,12 @@ def input_output():
 		secondnum=input("Enter the second number:")
 		n1=float(firstnum)
 		n2=float(secondnum)
+		print(n1)
+		print(n2)
 		operator=input("Enter the operation:")
+		print(operator)
 		#calculator(firstnum,secondnum, operator)
 		calculator(n1,n2, operator)
-
 		wantToExit=input("Do you wish to exit?")
 		if wantToExit=='y':
 			shouldExit=True
