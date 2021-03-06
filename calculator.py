@@ -1,11 +1,16 @@
 def calculator(number1, number2, operator):
+	"""Calculator that can do a number of math operations. If the 
+	operator provided by the user is invalid (not +,-,*,**,/,or //)
+	the calculator will not function."""
 	number1=float(number1)
 	number2=float(number2)
 	print(number1)
 	print(number2)
 	print(operator)
+	result=0.0
 	if (operator == '+'):
 		print(number1+number2)
+		return number1+number2
 	elif (operator == '-'):
 		print(number1-number2)
 	elif (operator == '*'):
@@ -14,6 +19,8 @@ def calculator(number1, number2, operator):
 		print(number1/number2)
 	elif (operator == '**'):
 		print(number1**number2)
+	elif (operator == '//'):
+		print(number1//number2)
 	else: return False
 def input_output():
 	shouldExit=False
