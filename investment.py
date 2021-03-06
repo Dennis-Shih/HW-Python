@@ -1,6 +1,10 @@
 def calculate_apr(principal, interest_rate, years):
+	"""Calculates the amount of money after a number of years given an interest
+	rate.""" 
+	isvalid= isinstance(principal, int) and isinstance(interest_rate,float)\
+	and isinstance(years, int) and principal>=0 and interest_rate>=0\
+	 and years >=0 
 
-	isvalid= isinstance(principal, int) and isinstance(interest_rate,float)	and isinstance(years, int)
 	if not isvalid:
 		return isvalid
 
@@ -14,5 +18,6 @@ def calculate_apr(principal, interest_rate, years):
 	return float(value)
 def main():
 	#calculate_apr(500,0.03, 65)
-	calculate_apr(100,0.06,1)
+	#calculate_apr(100,0.06,1)
+	calculate_apr(100,-0.05,3)
 main()
