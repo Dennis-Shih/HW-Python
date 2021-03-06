@@ -1,6 +1,6 @@
 import time
 
-#decorator
+#decorator function that calculates how long function func takes to run.
 def calculate_time(func):
 	def wrapper():
 		start_time=time.time()

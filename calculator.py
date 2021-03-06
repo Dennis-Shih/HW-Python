@@ -1,7 +1,7 @@
+"""Calculator that can do a number of math operations. If the 
+        operator provided by the user is invalid (not +,-,*,**,/,or //)
+        the calculator will not function."""
 def calculator(number1, number2, operator):
-	"""Calculator that can do a number of math operations. If the 
-	operator provided by the user is invalid (not +,-,*,**,/,or //)
-	the calculator will not function."""
 	number1=float(number1)
 	number2=float(number2)
 	print(number1)
@@ -27,6 +27,8 @@ def calculator(number1, number2, operator):
 		print(number1//number2)
 		return number1//number2
 	else: return False
+
+#takes input from the user and calls the calculator to carry out an operation
 def input_output():
 	shouldExit=False
 	while not shouldExit:
